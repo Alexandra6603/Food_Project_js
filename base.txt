@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title %}
+    <title>Backpack - {{ title }}</title>
+    {% else %}
+    <title>Backpack</title>
+    {% endif %}
+</head>
+<body>
+    <header>
+        <h1>Твоя раскладка</h1>
+    </header>
+
+    {% block content -%}
+
+    <div class="container">
+        <p>Твой контент</p>
+    </div>
+
+    {% endblock content -%}
+
+    <footer>
+        <p>Твой футер</p>
+        <a href="#">С кнопочкой</a>
+    </footer>
+</body>
+</html>
